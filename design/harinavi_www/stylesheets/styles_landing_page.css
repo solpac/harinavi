@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+/*---------------------------------
+ landing page
+-----------------------------------*/
+
+#content #main{
+	width: 1050px;
+}
+#landing_page_container{
+	margin-top:10px;
+	padding:10px;
+	font-family: Meiryo,メイリオ,sans-serif;
+	box-shadow: 0px 0px 2px 0px #ecf0f1;
+	border:solid 2px #ecf0f1\9;
+}
+
+/*リンクデザイン*/
+.entry_button{
+	margin-left:auto;
+	width:250px;
+	color:#fff;
+}
+.entry_button a{
+	display:block;
+	padding:5px 10px;
+	background-color:#e74c3c;
+	/*背景をアニメーションさせる*/
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;	
+}
+.entry_button a:hover{
+	background-color:#f1c40f;
+}
+#entry_button_left{
+	display:inline-block;
+	padding:5px;
+	font-size:12px;
+	text-align:center;
+	color:#000;
+}
+#entry_button_right{
+	display:inline-block;
+	padding:5px;
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;
+}
+
+/*ナビゲーション*/
+#section_premium_navi{
+	position:relative;
+	margin-top:10px;
+	margin-left:10px;
+	width:640px;
+	height:350px;
+	background-image:url(../images/landing_page/photo_top.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#section_premium_navi h1{
+	position: absolute;
+	left: 360px;
+	top: 20px;
+	padding:10px 5px;
+	width: 640px;
+	background-color:#f1c40f;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+	text-align: right;
+	text-shadow: -3px 3px 0px #f1c40f;
+	box-shadow: -10px 10px 0px 0px #FFFF99;
+	border-width:5px 2px 2px 5px\9;
+	border:solid #FFFFCC\9;
+	
+}
+:root #section_premium_navi h1{
+	border:none\0/IE9;
+}
+#outline_navigation{
+	position: absolute;
+	top: 100px;
+	left: 660px;	
+	padding: 10px 0px 0px 0px;
+	width:340px;
+	background-color:#FFCCCC;
+}
+#outline_navigation h2 a{
+	display:block;
+	padding:10px;
+	background-color:#e74c3c;
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;
+	/*背景をアニメーションさせる*/
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;	
+}
+#outline_navigation h2 a:hover{
+	background-color:#c0392b;
+}
+#outline_navigation >p{
+	padding:10px;
+	text-align:right;
+	font-size:12px;
+	color:#000;
+}
+
+/*各セクション設定*/
+.section_title{
+	margin-top:20px;
+	border-color:#27ae60;
+	border-width:0px 0px 2px 0px;
+	border-style:solid;
+}
+.section_title p{
+	font-size:28px;
+	font-weight:bold;
+	display:inline-block;
+	padding-top:5px;
+	width:100px;
+	background-color:#27ae60;
+	color:#fff;
+	text-align:center;
+}
+.section_title h1{
+	display:inline-block;
+	font-size:24px;
+	font-weight:bold;
+	color:#000;
+}
+
+/*はりなび4つの特徴*/
+#section_characterize_harinavi {
+	padding:20px;
+}
+#section_characterize_harinavi h2{
+	padding:10px 10px 0px 10px;
+	border-style:dotted;
+	border-width:0px 0px 1px 0px;
+	border-color:#bdc3c7;
+	color:#c0392b;
+	font-size:16px;
+}
+#section_characterize_harinavi >p{
+	padding:10px 20px;
+	font-size:14px;
+	line-height:25px;
+}
+
+/*無料掲載と有料掲載の比較*/
+#section_select_plan{
+	padding:10px 20px;
+}
+#section_select_plan h2{
+	padding: 20px;
+	font-size: 14px;
+}
+#section_select_plan h3{
+	margin:20px 0px 10px 0px;
+	padding:10px 0px 10px 20px;
+	background-color:#27ae60;
+	font-size:18px;
+	color:#fff;
+}
+#section_select_plan h4{
+	padding:10px 10px 0px 10px;
+	border-style:dotted;
+	border-width:0px 0px 1px 0px;
+	border-color:#bdc3c7;
+	color:#c0392b;
+	font-size:16px;
+}
+#section_select_plan ul{
+	padding:10px 10px 10px 20px;
+	font-size:14px;
+}
+#section_select_plan ul li{
+	padding-top:10px;
+}
+#section_select_plan figure{
+	margin:0 auto;
+	width:850px;
+	height:500px;
+	background-image:url("../images/landing_page/plan_table.png");
+	background-repeat:no-repeat;
+}
+
+/*お申し込みの流れ*/
+#section_flowchart_entry{
+	padding:10px 20px;
+}
+#section_flowchart_entry h2{
+	margin:10px 0px 0px 0px;
+	padding:5px 0px 5px 20px;
+	background-color:#27ae60;
+	font-size:18px;
+	color:#fff;
+}
+#section_flowchart_entry h3{
+	padding:10px 10px 0px 10px;
+	border-style:dotted;
+	border-width:0px 0px 1px 0px;
+	border-color:#bdc3c7;
+	color:#c0392b;
+	font-size:16px;
+}
+#section_flowchart_entry ul{
+	padding:10px 10px 10px 20px;
+	font-size:14px;
+}
+#section_flowchart_entry ul li{
+	padding-top:10px;
+}

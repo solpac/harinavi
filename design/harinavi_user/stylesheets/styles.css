@@ -1,0 +1,848 @@
+@charset "utf-8";
+
+/* ---------- reset css ---------- */
+
+*{margin: 0;padding: 0;}
+a { text-decoration: none;}
+ul, ol { list-style: none;}
+img { vertical-align: middle;border: none;}
+header, nav, article, aside, section, footer { display:block;}
+
+/* ---------- clearfix ---------- */
+
+.clearfix {width: 100%;}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* ---------- pc css ---------- */
+
+/*---------------------------------
+ all
+-----------------------------------*/
+
+body{
+	font-size: 16px;
+	font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',Meiryo,メイリオ,verdana,'MS PGothic','MS Pゴシック',sanse-serif;
+	line-height: 1;
+	word-wrap: break-word;
+}
+
+span.brp:after{
+	content: "\A";
+	white-space: pre;
+}
+
+/*---------------------------------
+ header
+-----------------------------------*/
+
+header{
+	width: 960px;
+	margin: 5px auto;
+}
+
+header .site_title img{
+	width: 290px;
+	height: 60px;
+	margin: 10px 0px 10px 10px;
+	float: left;
+}
+
+header .hello_button{
+	float: right;
+	display: block;
+	margin: 15px 0 0 0;
+	border: solid 1px rgb(203, 221, 208);
+	padding: 5px 5px 2px 5px;
+	color: rgb(105, 189, 131);
+	font-size:16px;
+}
+
+/*---------------------------------
+ content common
+-----------------------------------*/
+
+/* breadcrumbs_box */
+
+#content #main #breadcrumbs_box,
+#extra_content #main #breadcrumbs_box{
+	margin: 5px 0 -5px 5px;
+}
+
+#content #main #breadcrumbs_box ul li,
+#extra_content #main #breadcrumbs_box ul li{
+	display: inline-block;
+}
+
+#content #main #breadcrumbs_box ul li:after,
+#extra_content #main #breadcrumbs_box ul li:after{
+	content: ">";
+	display: inline-block;
+	margin: 0 0px 0 5px;
+}
+
+#content #main #breadcrumbs_box ul li:last-child:after,
+#extra_content #main #breadcrumbs_box ul li:last-child:after{
+	content: "";
+}
+
+#content #main #breadcrumbs_box ul li a,
+#extra_content #main #breadcrumbs_box ul li a{
+	color: black;
+	text-decoration: underline;
+}
+
+/*---------------------------------
+ content
+-----------------------------------*/
+
+#content{
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* content main */
+
+#content #main{
+	width: 960px;
+	float: left;
+}
+
+/*---------------------------------
+ main_area_contents_design
+-----------------------------------*/
+
+/*body 大枠CSS*/
+.article_container{
+	padding:20px;
+	margin:0px;
+	font-family:メイリオ,sans-serif;
+	box-shadow: 0px 0px 3px 1px #d5dbdd inset;
+	border:solid 2px #d5dbdd \9;
+	border-radius:2px;
+	overflow:hidden;
+}
+.article_container h1{
+	padding:5px 10px 0px 10px;
+	height:20px;
+	background-color:#f1c40f;
+	color:#fff;
+	font-size:16px;
+	font-weight:normal;
+}
+.article_container > p{
+	padding:10px 20px 10px 20px;
+	font-size:14px;
+}
+.article_container > a{
+	display:block;
+	width:125px;
+	padding:5px;
+	font-size:14px;
+	color:#000;
+	text-align:center;
+}
+.article_container > a:hover{
+	color:#e74c3c;
+}
+
+/*ログインフォーム*/
+.article_container > form >p {
+	padding:20px 20px 10px 20px;
+	font-size:16px;
+	line-height:25px;
+}
+.article_container > form >p a{
+	color:#3498db;
+}
+.message-warning {
+	padding:10px 20px;
+}
+.message-warning h2{
+	font-size:16px;
+}
+.message-warning p{
+	padding:10px;
+	line-height:25px;
+}
+
+/*パスワード変更*/
+.message-feedback {
+	padding:10px 20px;
+}
+.message-feedback h2{
+	font-size:16px;
+}
+.message-feedback p{
+	padding:10px;
+	line-height:25px;
+}
+
+/*入力フォーム　テンプレート*/
+.input_form_section{
+	padding:10px;
+}
+.input_form_section h2{
+	padding:5px 50px 5px 50px;
+	font-size:16px;
+	color:#dd0000;
+}
+.input_form_shape{
+	margin:10px auto 0px auto;
+	padding:10px 10px 10px 10px;
+	width:700px;
+	border-bottom:dotted 2px #f1c40f;
+	word-break: break-all;
+}
+
+.label_shape{
+	display:table-cell;
+	width:300px;
+}
+.label_shape p{
+	font-size:10px;
+	margin:5px 0px 0px 10px;
+}
+.label_shape span{
+	font-size:10px;
+	margin:5px 0px 0px 10px;
+}
+.input_shape{
+	display:table-cell;
+	width:400px;
+}
+.input_shape input{
+	width:200px;
+}
+.input_shape #zip_code{
+	width:100px;
+}
+
+.display_shape{
+	display:table-cell;
+	width:300px;
+}
+
+.form_display{
+	display:none;
+}
+.form_account_transfer_entry_elements_mistake{
+	margin:5px 0px 0px 10px;
+	color:#FF4444;
+	font-size:10px;
+}
+.form_member_entry_elements_mistake{
+	margin:5px 0px 0px 10px;
+	color:#FF4444;
+	font-size:10px;
+}
+.form_registration_information_elements_mistake{
+	margin:5px 0px 0px 10px;
+	color:#FF4444;
+	font-size:10px;
+}
+
+/*登録情報確認・変更画面*/
+.section_registration_information{
+	margin:50px auto 0 auto;
+	padding:10px;
+	width:700px;
+	border-bottom:dotted 2px #f1c40f;
+}
+.section_registration_information .form_display{
+	display:block;
+}
+.section_new_registration_information{
+	margin:0 auto;
+	padding:10px;
+	width:700px;
+	border-bottom:dotted 2px #f1c40f;
+}
+
+/*無料会員ID登録　確認ボタン*/
+#form_member_entry_confirmation{
+  margin-top:20px;
+	padding:0px 30px 10px 30px;
+	text-align:center;
+}
+#form_member_entry_confirmation > p{
+	/*form_account_transfer_entry_confirmation-p*/
+	text-align:center;
+	font-size:13px;
+	color:#996666;
+}
+#form_member_entry_confirmation_button,
+#form_premium_bankaccount_confirmation_button{
+	/*form_account_transfer_entry_confirmation-a*/
+	margin:20px auto 0px auto;
+	width:180px;
+}
+#form_member_entry_confirmation_button a,
+#form_premium_bankaccount_confirmation_button a{
+	display:block;
+	padding:10px;
+	background-color:#2ecc71;
+	border:outset 2px #fff;
+	font-weight:bold;
+	font-size:15px;
+	color:#fff;
+	
+	/*背景をアニメーションさせる*/
+	-webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;	
+}
+#form_member_entry_confirmation_button a:hover{
+	background-color:#339900;
+}
+
+/*口座振替登録　確認ボタン*/
+#form_account_transfer_entry_confirmation{
+	margin-top:20px;
+	padding:0px 30px 10px 30px;
+	text-align:center;
+}
+#form_account_transfer_entry_confirmation>p{
+	/*form_account_transfer_entry_confirmation-p*/
+	text-align:center;
+	font-size:13px;
+	color:#996666;
+}
+#form_account_transfer_entry_confirmation .button{
+	padding:10px;
+	width:200px;
+	background-color:#2ecc71;
+	border:outset 2px #fff;
+	font-weight:bold;
+	font-size:15px;
+	color:#fff;
+}
+#form_account_transfer_entry_confirmation .button:hover{
+	background-color:#339900;
+}
+#form_account_transfer_entry_confirmation_button{
+	/*form_account_transfer_entry_confirmation-a*/
+	margin:20px auto 0px auto;
+	width:180px;
+}
+#form_account_transfer_entry_confirmation_button input{
+	display:block;
+	padding:10px;
+	background-color:#2ecc71;
+	border:outset 2px #fff;
+	font-weight:bold;
+	font-size:15px;
+	color:#fff;
+	
+	/*背景をアニメーションさせる*/
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;	
+}
+#form_account_transfer_entry_confirmation_button input:hover{
+	background-color:#339900;
+}
+#form_registration_information_confirmation{
+  margin-top:20px;
+	padding:0px 30px 10px 30px;
+	text-align:center;
+}
+#form_registration_information_confirmation > p{
+	/*form_account_transfer_entry_confirmation-p*/
+	text-align:center;
+	font-size:13px;
+	color:#996666;
+}
+#form_registration_information_confirmation_button{
+	/*form_account_transfer_entry_confirmation-a*/
+	margin:20px auto 0px auto;
+	width:180px;
+}
+#form_registration_information_confirmation_button a{
+	display:block;
+	padding:10px;
+	background-color:#2ecc71;
+	border:outset 2px #fff;
+	font-weight:bold;
+	font-size:15px;
+	color:#fff;
+	
+	/*背景をアニメーションさせる*/
+	-webkit-transition: all 0.3s ease;
+   -moz-transition: all 0.3s ease;	
+}
+#form_registration_information_confirmation_button a:hover{
+	background-color:#339900;
+}
+
+/*修正・登録確定ボタン　テンプレート*/
+.correction_or_entry {
+	/*correction or entry*/
+	display:none;
+	margin:20px auto 0 auto;
+	width:550px;
+}
+.correction_or_entry p{
+	/*correction or entry-li*/
+	width:180px;
+	display:inline-block;
+}
+.correction_or_entry a{
+	display:block;
+	padding:10px;
+	background-color:#2ecc71;
+	border:outset 2px #fff;
+	font-weight:bold;
+	font-size:15px;
+	color:#fff;
+	
+	/*背景をアニメーションさせる*/
+	-webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+.correction_or_entry a:hover{
+	background-color:#339900;
+}
+.correction_or_entry input{
+	margin:0px 0px 10px 0px;
+	padding:1px 0px;
+	width:200px;
+}
+
+/*仮登録完了画面　テンプレート*/
+#confirmation_message{
+	margin:0px auto 0px auto;
+}
+#confirmation_message h2{
+	padding:20px 20px 20px 20px;
+	font-weight:bold; 
+	font-size:16px;
+	color:#f39c12;
+}
+#confirmation_message p{
+	padding:0px 30px 0px 30px;
+	line-height: 24px;
+}
+#help_message {
+	margin:30px 50px 0px 50px;
+	padding:10px;
+	background-color:#ECECEC;
+	box-shadow:0px 0px 2px 0px #d5dbdd;
+}
+#help_message h2{
+	font-weight:bold;
+	font-size:12px; 
+	text-shadow:0px 1px 1px #dddddd;
+}
+#help_message ul{
+	padding:5px 0px 0px 20px;
+	list-style-type:circle;
+}
+#help_message li{
+	padding:5px 0px 5px 0px;
+	font-size:12px;
+}
+
+/*セクションデザイン　テンプレート*/
+.section_menu{
+	margin:0px 0px 20px 0px;
+	padding:10px;
+	box-shadow:0px 0px 2px 0px #d5dbdd;
+	border:solid 1px #d5dbdd;
+}
+.section_menu h2{
+	padding:5px 10px;
+	background-color:#f1c40f;
+	color:#fff;
+	font-size:16px;
+}
+.section_menu >p{
+	padding:10px 20px 10px 20px;
+	font-size:14px;
+}
+
+/*mymenu　プレミアム会員*/
+#section_premium_menu dl{
+	margin:10px 40px;
+	padding:10px 20px 20px 20px;
+	box-shadow:0px 0px 2px 0px #d5dbdd;
+}
+#section_premium_menu dt{
+	padding:10px;
+	font-size:14px;
+}
+#section_premium_menu dd{
+	padding:5px;
+	font-size:12px;
+}
+#section_premium_menu a{
+	display:block;
+	margin:20px auto;
+	width:700px;
+	box-shadow: 1px 1px 1px 1px #f1c40f;
+	border:solid 2px #f1c40f\9;
+	color:#f1c40f;
+	-webkit-transition: color 0.5s ease,background-color 0.5s ease;
+	-moz-transition: color 0.5s ease,background-color 0.5s ease;
+}
+:root #section_premium_menu a{
+		box-shadow:none \0/IE9;
+}
+#section_premium_menu a:hover{
+	color:#FFF;
+	background-color:#f1c40f;
+}
+#section_premium_menu a p{
+	padding:10px;
+	text-align:center;
+}
+
+/*mymenu 会員機能*/
+#section_member_menu a{
+	display:block;
+	margin:10px auto;
+	width:890px;
+	color:#2ecc71;
+	box-shadow: 1px 1px 1px 1px #2ecc71;
+	border:solid 2px #2ecc71\9;
+	-webkit-transition: color 0.5s ease,background-color 1s ease;
+	-moz-transition: color 0.5s ease,background-color 1s ease;
+}
+:root #section_member_menu a{
+	box-shadow:none \0/IE9;
+}
+#section_member_menu a:hover{
+	color:#fff;
+	background-color:#2ecc71;
+}
+#section_member_menu p{
+	text-align:center;
+	padding:15px 0px;
+	font-size:16px;
+}
+
+/*mymenu 会員登録情報*/
+#section_profile_menu table{
+	margin:10px auto;
+	width:900px;
+	word-break: break-all;
+}
+#section_profile_menu table th{
+	padding:20px 10px;
+	text-align:left;
+	width:180px;
+	font-weight:normal;
+	border-bottom:solid 1px #f1c40f;
+}
+#section_profile_menu table td{
+	padding:20px 40px 20px 10px;
+	width:650px;
+	text-align:right;
+	border-bottom:solid 1px #f1c40f;
+}
+
+/*プレミアム登録画面*/
+#section_grid_container{
+	position:relative;
+	width:920px;
+	height:250px;
+	padding-bottom:10px;
+}
+#section_grid_container div{
+	/*背景をアニメーションさせる*/
+	-webkit-transition: top 0.5s ease,background-color 0.5s ease;
+	-moz-transition: top 0.5s ease,background-color 0.5s ease;
+}
+#section_grid_container div:hover{
+	top:20px;
+	background-color: #FFCC00;
+}
+.premium_appeal_menu{
+	position:absolute;
+	padding:10px;
+	width:200px;
+	height:200px;
+	box-shadow:0px 0px 2px 0px #d5dbdd;
+	overflow:hidden;	
+}
+.premium_appeal_menu h2{
+	padding:10px 10px 5px 10px;
+	height:20px;
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;
+	background: #FFCC00;
+}
+.premium_appeal_menu ul{
+	margin-top:10px;
+	padding:10px 10px 10px 15px;
+	height:135px;
+	/*todo rgba撤去*/
+	background-color:#FFFFCC;
+	font-size:10.5px;
+	color:#2c3e50;
+}
+.premium_appeal_menu ul li{
+	padding-top:10px;
+}
+#grid_container_1{
+	top:0px;
+	left:0px;
+	background-color:#FFFF99;
+}
+#grid_container_2{
+	top:0px;
+	left:230px;
+	background-color:#FFFF99;
+	
+}
+#grid_container_3{
+	top:0px;
+	left:460px;
+	background-color:#FFFF99;
+}
+#grid_container_4{
+	top:0px;
+	left:690px;
+	width:210px;
+	height:200px;
+	background-color:#FFFF99;
+}
+#section_payment_method{
+	position:relative;
+	width:920px;
+	height:250px;
+}
+.payment_method_menu{
+	position:absolute;
+	padding:10px;
+	width:430px;
+	height:230px;
+	border:solid 1px #d5dbdd\9;
+	box-shadow:0px 0px 2px 0px #d5dbdd;
+	overflow:hidden;	
+}
+:root .payment_method_menu{
+	box-shadow:none\0/IE9;
+}
+.payment_method_menu h2{
+	padding:10px 10px 5px 10px;
+	height:20px;
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;
+	/*todo rgba撤去予定*/
+	background-color: #FF9999;
+}
+.payment_method_menu ul{
+	margin-top:10px;
+	padding:10px 10px 10px 15px;
+	height:135px;
+	/*todo rgba撤去予定*/
+	background-color:rgba(255,255,255,0.5);
+	font-size:10.5px;
+	color:#2c3e50;
+}
+.payment_method_menu ul li{
+	padding-top:10px;
+}
+.payment_method_menu ul p{
+	margin: 0 0 10px 0;
+	text-align:center;
+	border:solid #d5dbdd\9;
+	border-width:1px 3px 2px 1px\9;
+	box-shadow:1px 1px 1px 1px rgba(231,76,60,0.6);
+}
+:root .payment_method_menu ul p{
+	box-shadow:none \0/IE9;
+}
+.payment_method_menu ul a{
+	display:block;
+	padding:5px;
+	font-size:14px;
+	color:#e74c3c;
+	-webkit-transition: color 0.5s ease,background-color 0.5s ease;
+	-moz-transition: color 0.5s ease,background-color 0.5s ease;
+}
+.payment_method_menu a:hover{
+	background-color:#e74c3c;
+	color:#fff;
+}
+#grid_container_account_transfer{
+	top:0px;
+	left:0px;
+}
+#grid_container_credit_card{
+	top:0px;
+	left:460px;
+	width:440px;
+}
+
+/*マイページ編集画面*/
+.edit_mypage_input_section{
+	margin:20px auto 0px auto;
+	
+	padding:20px 20px;
+	width:780px;
+}
+.edit_mypage_input_section > h2{
+	margin: 20px 0 0 0;
+	padding:20px 0px 20px 0px;
+	font-size:16px;
+	color:#dd0000;
+}
+.edit_mypage_form_shape{
+	padding:20px 0px;
+	background-color:#fff;
+	border:dotted #f1c40f;
+	border-width:0px 0px 2px 0px ;
+}
+.edit_mypage_form_shape > p{
+	display:table-cell;
+	width:150px;
+	font-size:14px;
+	text-align:center;
+	vertical-align:middle;
+}
+.edit_mypage_form_shape p.title_area span{
+	font-size:8px;
+}
+.edit_mypage_form_shape div.edit_area{
+	display:table-cell;
+	padding-left:20px;
+	width:610px;
+}
+.edit_mypage_form_shape div.edit_area h3{
+	margin-top:10px;
+	padding:5px 0px;
+	font-size:12px;
+	color:#dd0000;
+}
+.edit_mypage_form_shape div.edit_area input[type="text"]{
+	width:450px;
+}
+.edit_mypage_form_shape div.edit_area textarea{
+	resize:none;
+	height:70px;
+	width:450px;
+}
+.edit_mypage_form_shape div.edit_area ul{
+	padding:5px 0px;
+}
+.edit_mypage_form_shape div.edit_area ul li{
+	display:inline-block;
+	padding-top:5px;
+	width:170px;
+	height:20px;
+	font-size:14px;
+	
+}
+.edit_mypage_form_shape div.edit_area ul li input{
+	margin-right:5px;
+}
+.edit_mypage_form_shape div.edit_area ul li label{
+	padding:0px 5px;
+}
+.edit_mypage_form_shape div.edit_area span{
+	font-size:8px;
+}
+.additional_input_shape{
+	width:300px;
+}
+#form_edit_mypage_confirmation{
+	margin-top:20px;
+	padding:0px 30px 10px 30px;
+	text-align:center;
+}
+#form_edit_mypage_confirmation>p{
+	/*form_account_transfer_entry_confirmation-p*/
+	text-align:center;
+	font-size:13px;
+	color:#996666;
+}
+#form_edit_mypage_confirmation_button{
+	/*form_account_transfer_entry_confirmation-a*/
+	margin:20px auto 0px auto;
+	width:180px;
+}
+#form_edit_mypage_confirmation_button a{
+	display:block;
+	padding:10px;
+	/*todo rgba撤去予定*/
+	background-color:rgba(22, 160, 133,0.6);
+	border:outset 2px rgba(255,255,255,0.5);
+	font-weight:bold;
+	font-size:15px;
+	color:#fff;
+	
+	/*背景をアニメーションさせる*/
+	-webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;	
+}
+#form_edit_mypage_confirmation_button a:hover{
+	background-color:#339900;
+}
+
+.block > p{
+	padding-bottom:5px;
+	font-size:12px;
+}
+.block .button{
+	padding:0px 5px;
+	margin-bottom:10px;
+}
+.desc{
+	padding:5px 0px 0px 10px;
+	font-size:12px;
+}
+.desc_sub{
+	line-height:18px;
+	padding-bottom:5px;
+	font-size:12px;
+}
+
+/*その他ボタン等*/
+input.activate_button{
+	padding:10px;
+	background-color:#2ecc71;
+	border:outset 2px #fff;
+	font-weight:bold;
+	font-size:15px;
+	color:#fff;
+}
+input.activate_button:hover{
+	background-color:#339900;
+}
+
+/*---------------------------------
+ footer
+ -----------------------------------*/
+footer{
+	width: 960px;
+	margin: 0 auto;
+}
+footer ul.link_list{
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+footer ul.link_list li{
+	display: inline-block;
+	margin: 10px 0 0 0;
+	padding: 0 10px 0 10px;
+	border-left: solid 1px #cfcfcf;
+}
+footer ul.link_list li:first-child{
+	border-left: 0;
+}
+footer ul.link_list li a{
+	color: #222222;
+	font-size:14px
+}
+footer .copyright{
+	display: block;
+	margin: 10px 0;
+	color: #222222;
+	font-size: 14px;
+	text-align: center;
+}
